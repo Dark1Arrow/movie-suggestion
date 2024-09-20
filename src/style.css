@@ -1,0 +1,42 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+
+    height: 50px;
+    background-color:#1D1D1D;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap: 50px;
+  
+    
+    
+}
+
+
+.logo {
+
+    color: #FFFFFF;
+    font-size: 20px;
+   
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    
+    
+}
+
+.nav-links li {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0px 15px;
+    
+}
