@@ -1,0 +1,198 @@
+{
+    "heroSection": [
+        {
+            "name": "The Dark Knight",
+            "rating": 9,
+            "backgroundImage": "https://theconsultingdetectivesblog.com/wp-content/uploads/2014/06/the-dark-knight-original.jpg",
+            "releaseDate": "18 July 2008",
+            "director": "Christopher Nolan"
+        },
+        {
+            "name": "Inception",
+            "rating": 8.8,
+            "backgroundImage": "https://miro.medium.com/v2/resize:fit:1400/1*fQprmrsYfaAC5jmKBfp7Sg.jpeg",
+            "releaseDate": "16 Jul 2010",
+            "director": "Christopher Nolan"
+        },
+        {
+            "name": "Kingsman: The Golden Circle",
+            "rating": 6.7,
+            "backgroundImage": "https://reactormag.com/wp-content/uploads/2019/06/KingsmanGoldenCircle01.jpg",
+            "releaseDate": "22 Sep 2017",
+            "director": "Matthew Vaughn"
+        },
+        {
+            "name": "Ready Player One",
+            "rating": 7.4,
+            "backgroundImage": "https://miro.medium.com/v2/resize:fit:5200/1*XXSS1NOmj3eDL9jGcXI3dA.jpeg",
+            "releaseDate": "29 Mar 2018",
+            "director": "Steven Spielberg"
+        }
+    ],
+    "favoriteSection": [
+        {
+            "name": "Sector 36",
+            "background": "https://m.media-amazon.com/images/M/MV5BMGE0YWU1MmEtN2FhMS00NzBlLWE3MTgtMWZkYjdmNDg5ZTFiXkEyXkFqcGc@._V1_QL75_UY562_CR35,0,380,562_.jpg"
+        },
+        {
+            "name": "Kill",
+            "background": "https://m.media-amazon.com/images/M/MV5BZjI1ZjM3NjUtYTc1Ni00ODJmLWI5YjQtMWZiZTAyNTFiZGY1XkEyXkFqcGc@._V1_QL75_UY562_CR35,0,380,562_.jpg"
+        },
+        {
+            "name": "Stree 2: Sarkate Ka Aatank",
+            "background": "https://m.media-amazon.com/images/M/MV5BMTA1NmUxYzItZmVmNy00YmQxLTk4Y2UtZjVkMWUwMWQ5N2IxXkEyXkFqcGc@._V1_QL75_UY562_CR35,0,380,562_.jpg"
+        },
+        {
+            "name": "Kalki",
+            "background": "https://m.media-amazon.com/images/M/MV5BMTM3ZGUwYTEtZTI5NS00ZmMyLTk2YmQtMWU4YjlhZTI3NjRjXkEyXkFqcGc@._V1_QL75_UX380_CR0,16,380,562_.jpg"
+        },
+        {
+            "name": "Tumbbad",
+            "background": "https://m.media-amazon.com/images/M/MV5BMzVjNGFmZTMtYjRjNi00OWQzLTlkNWQtZmU1OGI0ODc2ODU5XkEyXkFqcGc@._V1_QL75_UY562_CR36,0,380,562_.jpg"
+        },
+        {
+            "name": "Maharaja",
+            "background": "https://m.media-amazon.com/images/M/MV5BOTFlMTIxOGItZTk0Zi00MTk2LWJiM2UtMzlhZWYzNjQ4N2Y3XkEyXkFqcGc@._V1_QL75_UY562_CR21,0,380,562_.jpg"
+        },
+        {
+            "name": "A.R.M",
+            "background": "https://m.media-amazon.com/images/M/MV5BOTdiZjI3OGYtZTk1YS00Mjk5LTlmYzktODQ4NDQyM2JjNmI3XkEyXkFqcGc@._V1_QL75_UY562_CR3,0,380,562_.jpg"
+        }
+    ],
+    "actorsSection": [
+        {
+            "name": "Pankaj Tripathi",
+            "background": "https://m.media-amazon.com/images/M/MV5BYjU5NGViZTMtM2QwMy00MmFkLTg5MjAtYzdhZWJlNDM3YjA0XkEyXkFqcGc@._V1_QL75_UY414_CR5,0,280,414_.jpg"
+        },
+        {
+            "name": "Joey King",
+            "background": "https://m.media-amazon.com/images/M/MV5BODMwNGQwN2ItZWI5Zi00Y2JlLTlhNDQtZTA1NDgzYmFlNGM1XkEyXkFqcGc@._V1_QL75_UY414_CR229,0,280,414_.jpg"
+        },
+        {
+            "name": "Kaitlin Olson",
+            "background": "https://m.media-amazon.com/images/M/MV5BMTMxODAwMjQxNV5BMl5BanBnXkFtZTYwODEyMjAz._V1_QL75_UX280_CR0,4,280,414_.jpg"
+        },
+        {
+            "name": "Ella Purnell",
+            "background": "https://m.media-amazon.com/images/M/MV5BZGNkMWI4ZmItN2Y2Mi00Mzc1LWExYTctMjMzMjhmMDE0NWVkXkEyXkFqcGc@._V1_QL75_UY414_CR16,0,280,414_.jpg"
+        },
+        {
+            "name": "Nicole Kidman",
+            "background": "https://m.media-amazon.com/images/M/MV5BMTk1MjM5NDg4MF5BMl5BanBnXkFtZTcwNDg1OTQ4Nw@@._V1_QL75_UY414_CR13,0,280,414_.jpg"
+        },
+        {
+            "name": "Benedict Cumberbatch",
+            "background": "https://m.media-amazon.com/images/M/MV5BMjE0MDkzMDQwOF5BMl5BanBnXkFtZTgwOTE1Mjg1MzE@._V1_QL75_UY414_CR3,0,280,414_.jpg"
+        },
+        {
+            "name": "Bill Skarsgård",
+            "background": "https://m.media-amazon.com/images/M/MV5BMmNhMDQ1YjktYTg1Ny00Mjg0LWFmZTgtMmE0OTkxYmQzYzVlXkEyXkFqcGc@._V1_QL75_UY414_CR157,0,280,414_.jpg"
+        }
+    ],
+    "comingSection": [
+        {
+            "name": "Joker: Folie à Deux",
+            "date": "oct 4",
+            "background": "https://discussingfilm.net/wp-content/uploads/2024/09/JokerFolieaDeux-Review.jpg"
+        },
+        {
+            "name": "Megalopolis",
+            "date": "sep 27",
+            "background": "https://i.abcnewsfe.com/a/8a94bf68-a325-42c4-9161-5ecc25f0bd72/Megalopolis-1-ht-gmh-240821_1724285455351_hpMain.jpg"
+        },
+        {
+            "name": "Venom: The Last Dance",
+            "date": "oct 25",
+            "background": "https://www.indiewire.com/wp-content/uploads/2024/06/MCDVELE_SP031.jpg"
+        },
+        {
+            "name": "Small Things Like These",
+            "date": "nov 8",
+            "background": "https://variety.com/wp-content/uploads/2024/02/STLT-copy.jpg"
+        }
+    ],
+    "genreSection": [
+        {
+            "genre": "Action",
+            "background": "https://www.watchmojo.com/uploads/thumbs720/Fi-M-Top10-Action-Movie-Killing-Spree-Scenes-720p30.jpg"
+        },
+        {
+            "genre": "thriller",
+            "background": "https://variety.com/wp-content/uploads/2024/07/gaga-harley.png?w=1000&h=667&crop=1"
+        },
+        {
+            "genre": "horror",
+            "background": "https://www.slashfilm.com/img/gallery/12-horror-movie-scenes-that-scared-actors-in-real-life/bill-haders-scenes-with-pennywise-in-it-chapter-two-1636121685.jpg"
+        },
+        {
+            "genre": "gangster",
+            "background": "https://d17389e216ygm.cloudfront.net/wp-content/uploads/CE_GCDevil_1.jpg"
+        },
+        {
+            "genre": "sci fi",
+            "background": "https://i.ytimg.com/vi/731cqqgdhEs/maxresdefault.jpg"
+        }
+    ],
+    "toplistSection": [
+        {
+            "tag": "tag1",
+            "rating": "6.6",
+            "name": "the perfect couple",
+            "background":"https://m.media-amazon.com/images/M/MV5BMTRmNDBjNWEtODc5My00YjEyLWJlY2EtODhmYTcxYTcyMzRkXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg"
+        },
+        {
+            "tag": "tag2",
+            "rating": "8.8",
+            "name": "the penguin",
+             "background":"https://m.media-amazon.com/images/M/MV5BYmU3MzYzOWEtOTdkZi00YzA1LTliMzQtNDdiZDBjY2FiNmFlXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg"
+        },
+        {
+            "tag": "tag3",
+            "rating": "7.9",
+            "name": "monsters",
+            "background":"https://m.media-amazon.com/images/M/MV5BNDAzYzEzZDMtOWE3Ny00MTU3LWIwY2MtMDYzZmYzYTZkYjJkXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg"
+        },
+        {
+            "tag": "tag4",
+            "rating": "6.9",
+            "name": "The Lord of the Rings",
+            "background":"https://m.media-amazon.com/images/M/MV5BNmVmZGQ2ZTctYzE4NC00YzkxLThhNjYtNGIyZjJmZGEwMjUzXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+        },
+        {
+            "tag": "tag5",
+            "rating": "7",
+            "name": "beetlejuice beetlejuice",
+            "background":"https://m.media-amazon.com/images/M/MV5BYmRlYzE3ZTYtNjIyZi00MWYyLWEzZDItOWI5NzM1Yjc0NmI5XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg"
+        },
+        {
+            "tag": "tag6",
+            "rating": "6.7",
+            "name": "agatha all along",
+            "background":"https://m.media-amazon.com/images/M/MV5BMDcyZTNjOTEtNzc5Yy00Y2UzLThkMWYtNTY4YmM4OWI5OTMzXkEyXkFqcGc@._V1_QL75_UY562_CR35,0,380,562_.jpg"
+        },
+        {
+            "tag": "tag7",
+            "rating": "4.8",
+            "name": "uglies",
+            "background":"https://m.media-amazon.com/images/M/MV5BOGEyYmQxNjQtNDlkYy00MDlkLTgyNDUtZDA0NGY3ZTNlZWU0XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg"
+        },
+        {
+            "tag": "tag8",
+            "rating": "8.0",
+            "name": "the substance",
+            "background":"https://m.media-amazon.com/images/M/MV5BZDQ1NGE5MGMtYzdlZC00ODExLWJlMDMtNWU4NjA5OWYwMDEwXkEyXkFqcGc@._V1_QL75_UY562_CR2,0,380,562_.jpg"
+        },
+        {
+            "tag": "tag9",
+            "rating": "8.6",
+            "name": "shogun",
+            "background":"https://m.media-amazon.com/images/M/MV5BZmJkMDRjYzEtMWI3Ny00OWE3LWJlNTItMGQ1MTQzMzc3NDY5XkEyXkFqcGc@._V1_QL75_UY562_CR35,0,380,562_.jpg"
+        },
+        {
+            "tag": "tag10",
+            "rating":"7.2",
+            "name":"speak no evil",
+            "background":"https://m.media-amazon.com/images/M/MV5BMWI2OWFjNjgtOTQ2Zi00MjlmLTg2MGYtNmE4MjMyZjIzMDA0XkEyXkFqcGc@._V1_QL75_UX380_CR0,20,380,562_.jpg"
+        }
+    ]
+}
