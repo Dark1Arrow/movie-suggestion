@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+const tmdb = import.meta.env.REACT_APP_TMDB
 
 const SearchCatgory = () => {
 
@@ -28,7 +29,7 @@ const SearchCatgory = () => {
                 const response = await axios.get(`https://api.themoviedb.org/3/discover/movie`,
                     {
                         params: {
-                            api_key: "e319b396244f4ff8bba57c09fdf712bb",
+                            api_key: tmdb,
                             primary_release_year: year,
                             with_genres: genre,
                             with_original_language: language,

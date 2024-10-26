@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+const tmdb = import.meta.env.REACT_APP_TMDB
+const youtube = import.meta.env.REACT_APP_YOUTUBE
 
 const Movie = ({ movie }) => {
 
@@ -30,7 +32,7 @@ const Movie = ({ movie }) => {
             const response = await axios.get(
               `https://api.themoviedb.org/3/search/person`, {
               params: {
-                api_key: "e319b396244f4ff8bba57c09fdf712bb",
+                api_key: tmdb,
                 query: name,
               },
             });
@@ -73,7 +75,7 @@ const Movie = ({ movie }) => {
               part: "snippet",
               q: `${movie.Title} trailer`,
               type: "video",
-              key: "AIzaSyBezWtAvXvF9sDJajifHJ2Wk6ujVozGsxo",
+              key: youtube,
             }
           }
         );
@@ -152,15 +154,15 @@ const Movie = ({ movie }) => {
         <div className='text-lg sm:text-xl md:text-2xl font-normal flex'><div>Writer:</div>
           <div>
             {movie.Writer.split(',').map((data, index) => (
-            <Link key={index}><span  className=' pl-5 font-light'>{data.trim()} </span></Link>
-          ))}
+              <Link key={index}><span className=' pl-5 font-light'>{data.trim()} </span></Link>
+            ))}
           </div>
         </div>
         <div className='text-xl md:text-2xl'>
           Actors:
           <div className='w-[100%] scroll-section overflow-scroll my-5 sm:my-20 flex justify-start gap-2 md:gap-10 lg:gap-20 items-center'>
             {actor.map((data, index) => (
-              <Link to={`/movinamee-suggestion/actor`} state={{name: `${data.name}`}} key={index}><div className=' flex flex-col justify-center items-center'>
+              <Link to={`/movie-suggestion/actor`} state={{ name: `${data.name}` }} key={index}><div className=' flex flex-col justify-center items-center'>
                 <div className='w-[140px] sm:w-[180px] lg:w-[200px] sm:h-[180px] h-[140px] lg:h-[200px] rounded-full bg-black border border-[#D3D3D3]'
                   style={{
                     backgroundImage: `url(${data.image})`,

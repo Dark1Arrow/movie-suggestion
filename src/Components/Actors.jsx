@@ -4,6 +4,7 @@ import FooterOnly from './FooterOnly'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
+const tmdb = import.meta.env.REACT_APP_TMDB
 
 const Actors = () => {
     const location = useLocation();
@@ -16,7 +17,7 @@ const Actors = () => {
             try {
                 const response = await axios.get(`https://api.themoviedb.org/3/search/person`, {
                     params: {
-                        api_key: "e319b396244f4ff8bba57c09fdf712bb",
+                        api_key:  tmdb,
                         query: name
                     }
                 })
@@ -26,7 +27,7 @@ const Actors = () => {
                 if (actorsData) {
                     const actorsSearch = await axios.get(`https://api.themoviedb.org/3/person/${actorsData.id}`, {
                         params: {
-                            api_key: "e319b396244f4ff8bba57c09fdf712bb",
+                            api_key: tmdb,
                         }
                     })
 

@@ -6,10 +6,11 @@ const search = () => {
     const [searchMovie, setSearchMovie] = useState("");
     const [movie, setMovie] = useState('')
     const [response, setResponse] = useState(false)
+    const omdb = import.meta.env.REACT_APP_OMDB
 
     const findMovie = async (query) => {
         try {
-            const response = await fetch(`https://www.omdbapi.com/?t=${query}&apikey=c3bdceb7`)
+            const response = await fetch(`https://www.omdbapi.com/?t=${query}&apikey=${tmdb}`)
             const data = await response.json()
 
             setMovie(data)

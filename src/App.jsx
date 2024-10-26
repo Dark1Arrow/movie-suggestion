@@ -7,7 +7,6 @@ import About from './Components/About'
 import Actors from './Components/Actors'
 
 function App() {
-  
   const router = createBrowserRouter([
     {
       path: "/movie-suggestion/",

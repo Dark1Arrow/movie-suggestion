@@ -3,6 +3,7 @@ import Movie from './Movie'
 import Navbar from './Navbar'
 import FooterOnly from './FooterOnly'
 import { useLocation } from 'react-router-dom'
+const omdb = import.meta.env.REACT_APP_OMDB
 
 const MoviePage = () => {
 
@@ -13,7 +14,7 @@ const MoviePage = () => {
     useEffect(() => {
         const fecthData = async () => {
             try {
-                const response = await fetch(`https://www.omdbapi.com/?t=${movieTitle}&apikey=c3bdceb7`)
+                const response = await fetch(`https://www.omdbapi.com/?t=${movieTitle}&apikey=${omdb}`)
                 const data = await response.json()
 
                 setMovie(data)
