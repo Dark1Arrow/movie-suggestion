@@ -3,17 +3,43 @@
 @tailwind utilities;
 
 
-.scroll-section{
-    overflow-x: scroll;
-    overflow-y: hidden;
+* {
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.scroll-section {
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 
 .scroll-section::-webkit-scrollbar {
-    display: none; /* Hide scrollbar in Chrome, Safari */
-  }
-  
-  .scroll-section {
-    -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
-    scrollbar-width: none; /* Hide scrollbar in Firefox */
-  }
+  display: none;
+  /* Hide scrollbar in Chrome, Safari */
+}
+
+.scroll-section {
+  -ms-overflow-style: none;
+  /* Hide scrollbar in Internet Explorer */
+  scrollbar-width: none;
+  /* Hide scrollbar in Firefox */
+}
+
+.scroll-section-y {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+.scroll-section-y::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar in Chrome, Safari */
+}
+
+.scroll-section-y {
+  -ms-overflow-style: none;
+  /* Hide scrollbar in Internet Explorer */
+  scrollbar-width: none;
+  /* Hide scrollbar in Firefox */
+}

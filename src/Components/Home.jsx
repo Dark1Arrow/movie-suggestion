@@ -2,6 +2,8 @@ import Navbar from './Navbar'
 import React, { useState } from 'react'
 import FooterOnly from './FooterOnly'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 const Home = () => {
 
@@ -20,8 +22,8 @@ const Home = () => {
 
   //actor section
   const [comingData, setComingData] = useState([])
-  const [favoritesData, setFavoritesData] = useState(["",""])
-  
+  const [favoritesData, setFavoritesData] = useState(["", ""])
+
   //genre section
   const [genreData, setGenreData] = useState([])
 
@@ -64,13 +66,17 @@ const Home = () => {
               backgroundPosition: "top",
               backgroundSize: "cover"
             }}>
-
             <div className='flex justify-end lg:justify-between'>
-              <div className=' hidden lg:flex bg-[#00000070] uppercase text-3xl font-semibold px-10 py-5 backdrop-blur-[5px]'>{data.name}</div>
+              <div className=' hidden lg:flex bg-[#00000070] uppercase text-3xl font-semibold justify-center items-center px-10 py-5 backdrop-blur-[5px]'>{data.name}</div>
 
               <div className=' rounded-full bg-[#00000053] uppercase text-3xl font-semibold px-2 sm:px-4 py-2 sm:py-4 backdrop-blur-[5px] hidden sm:flex gap-2 sm:gap-5'>
-
-                <img src="home/profile.png" alt="" />
+                <div className='w-[50px] h-[50px] rounded-full'
+                style={{
+                  backgroundImage: `url(${data.directorImg})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover"
+                }}>
+                </div>
                 <div className='mx-2 sm:mx-10'>
                   <div className='text-xl font-normal '>{data.director}</div>
                   <div className='text-sm font-medium text-[#B5B5B5]'>direacted by</div>
@@ -82,17 +88,17 @@ const Home = () => {
             <div className='h-[75%] mt-24 w-[50%] mr-24 gap-5 right-0 hidden absolute lg:grid grid-cols-1 grid-rows-3'>
               {heroData.filter(heroData => heroData.name !== herobg).map((data, index) => (
 
-                <div key={index} onClick={() => setHeroBg(data.name)} onMouseEnter={() => setHeroHover(index)} onMouseLeave={() => setHeroHover(null)} className='cursor-pointer border border-[#70889c81] w-[40%] h-full ml-auto rounded-[15px]'
+                <div key={index} onClick={() => setHeroBg(data.name)} onMouseEnter={() => setHeroHover(index)} onMouseLeave={() => setHeroHover(null)} className='cursor-pointer border border-[#4d4d4d] w-[40%] h-full ml-auto rounded-[15px]'
                   style={{
                     backgroundImage: `url(${data.backgroundImage})`,
                     backgroundPosition: "top",
                     backgroundSize: "cover"
                   }}>
                   {heroHover == index && (
-                    <div className='bg-[#00000054] backdrop-blur-[1.5px] w-full h-full rounded-[15px] p-8 flex justify-start items-end '>
+                    <div className='border border-[#323232] bg-[#00000054] w-full h-full rounded-[15px] p-8 flex justify-start items-end '>
                       <div className='flex gap-2 flex-col'>
-                        <div className='uppercase text-2xl'>{data.name}</div>
-                        <div className='uppercase text-xl flex gap-2'><img src="home/star.svg" alt="" /> {data.rating}/10</div>
+                        <div className='uppercase text-xl'>{data.name}</div>
+                        <div className='uppercase text-lg flex gap-2'><img src="home/star.svg" alt="" /> {data.rating}/10</div>
                       </div>
                     </div>
                   )}
@@ -108,8 +114,8 @@ const Home = () => {
               </div>
 
               <div className='flex justify-between w-full sm:w-[450px] md:w-[550px] lg:w-[600px] mt-5 md:mt-10'>
-                <button className='bg-black px-8 sm:px-10 py-3 text-lg sm:text-2xl'><span className='text-[#989898]'>Watch</span> review</button>
-                <button className='border bg-[#00000072] px-8 sm:px-10 py-3 text-lg sm:text-2xl'><span className='text-[#989898]'>see</span> Details</button>
+                <Link to={"/movie-suggestion/about"}><button className='bg-black px-8 sm:px-10 py-3 text-lg sm:text-2xl'><span className='text-[#989898]'>About</span> Us</button></Link>
+                <Link to={`/movie-suggestion/movie`} state={{ movieTitle: `${data.name}` }}><button className='border bg-[#00000072] px-8 sm:px-10 py-3 text-lg sm:text-2xl'><span className='text-[#989898]'>see</span> Details</button></Link>
               </div>
             </div>
 
@@ -122,44 +128,36 @@ const Home = () => {
 
         <div className=' pt-5 sm:pt-10 lg:pt-20 flex gap-2 sm:gap-5 lg:gap-10 scroll-section overflow-auto'>
           {favoriteData.map((data, index) => (
-            <div key={index} className='h-[270px] sm:h-[300px] lg:h-[350px] min-w-[160px] sm:min-w-[200px] lg:min-w-[250px]' >
-              <div onMouseEnter={() =>setHeroHover(index)} onMouseLeave={() => setHeroHover(null)} className='w-full h-[210px] sm:h-[250px] lg:h-[300px] rounded-[5px] border border-[#70889c3b]'
-               style={{
-                backgroundImage: `url(${data.background})`,
-                backgroundPosition: "top",
-                backgroundSize: "cover"
-              }}>
-                {heroHover == index && (
-                  <div className='bg-[#0000006e] backdrop-blur-[1.5px] w-full h-full rounded-[5px] p-8 flex justify-start items-end '>
-                    <div className='flex gap-2 flex-col'>
-                      <div className='uppercase text-2xl'>name</div>
-                      <div className='uppercase text-xl flex gap-2'>discription</div>
-                    </div>
-                  </div>
-                )}
+            <Link to={`/movie-suggestion/movie`} state={{ movieTitle: `${data.name}` }} key={index}><div className='h-[270px] sm:h-[300px] lg:h-[350px] min-w-[160px] sm:min-w-[200px] lg:min-w-[250px]' >
+              <div onMouseEnter={() => setHeroHover(index)} onMouseLeave={() => setHeroHover(null)} className='w-full h-[210px] sm:h-[250px] lg:h-[300px] rounded-[5px] border border-[#292929]'
+                style={{
+                  backgroundImage: `url(${data.background})`,
+                  backgroundPosition: "top",
+                  backgroundSize: "cover"
+                }}>
               </div>
 
               <div className='text-center p-2 sm:p-5 text-lg sm:text-xl'>{data.name}</div>
-            </div>
+            </div></Link>
           ))}
         </div>
       </div>
 
-      <div className='actors-section py-5 mt-10 md:mt-14 lg:mt-20 bg-[#2D2D2d] capitalize '>
+      <div className='actors-section py-5 mt-10 md:mt-14 lg:mt-20 bg-[#1B1E20] capitalize '>
         <div className='mx-2 sm:mx-5 md:mx-10 lg:mx-24 mt-5 md:mt-10'>
           <div className='text-2xl sm:text-3xl md:text-4xl font-medium sm:font-normal'>most popular Celibratery -<span className='text-[#989898]'> top rising </span></div>
 
           <div className='py-10 md:py-14 lg:py-20 flex gap-5 lg:gap-10 scroll-section'>
             {actorData.map((data, index) => (
-              <div key={index} className='min-w-[150px] md:min-w-[200px] lg:min-w-[250px] h-[150px] md:h-[200px] lg:h-[250px]'>
+              <Link to={`/movie-suggestion/actor`} state={{ name: `${data.name}` }} key={index}><div className='min-w-[150px] md:min-w-[200px] lg:min-w-[250px] h-[150px] md:h-[200px] lg:h-[250px]'>
                 <div className='w-full h-[150px] md:h-[200px] lg:h-[250px] rounded-full'
-                style={{
-                  backgroundImage: `url(${data.background})`,
-                  backgroundPosition: "top",
-                  backgroundSize: "cover"
-                }}></div>
+                  style={{
+                    backgroundImage: `url(${data.background})`,
+                    backgroundPosition: "top",
+                    backgroundSize: "cover"
+                  }}></div>
                 <div className='text-center p-2 md:p-5 text-lg sm:text-xl'>{data.name}</div>
-              </div>
+              </div></Link>
             ))}
           </div>
         </div>
@@ -177,21 +175,21 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='intrust-section my-5 md:my-10 w-full bg-[#2D2D2d] pt-8 md:pt-10 lg:py-10 px-2 sm:px-5 md:px-10 lg:px-24 capitalize'>
+      <div className='intrust-section my-5 md:my-10 w-full bg-[#1B1E20] pt-8 md:pt-10 lg:py-10 px-2 sm:px-5 md:px-10 lg:px-24 capitalize'>
         <div className='text-2xl sm:text-3xl md:text-4xl font-medium sm:font-normal'>according your intrust  -  <span className='text-[#989898]'>we give top list </span></div>
 
         <div className='w-full flex gap-2 sm:gap-5 lg:gap-10 scroll-section'>
           {genreData.map((data, index) => (
-            <div key={index} className='py-5 md:py-10'>
+            <Link to={`/movie-suggestion/categroy`} state={{ pram1: `${data.language}`, pram2: `${data.code}` }} key={index} ><div className='py-5 md:py-10'>
               <div className='min-w-[270px] sm:min-w-[300px] md:min-w-[390px] lg:min-w-[540px] h-[170px] sm:h-[200px] md:h-[250px] lg:h-[300px] rounded-[15px]'
-              style={{
-                backgroundImage: `url(${data.background})`,
-                backgroundPosition: "top",
-                backgroundSize: "cover"
-              }}></div>
+                style={{
+                  backgroundImage: `url(${data.background})`,
+                  backgroundPosition: "top",
+                  backgroundSize: "cover"
+                }}></div>
               <div className='capitalize pt-3 px-5 text-lg font-medium sm:font-medium sm:text-xl'>genre - {data.genre}</div>
               <div className='text-[#173ECC] font-medium px-5 text-lg sm:text-xl'>see the list</div>
-            </div>
+            </div></Link>
           ))}
         </div>
       </div>
@@ -201,45 +199,45 @@ const Home = () => {
 
         <div className='w-full flex scroll-section gap-2 sm:gap-5 lg:gap-10'>
           {toplistData.map((data, index) => (
-            <div key={index} className='py-10 md:py-10 lg:py-20 min-w-[170px] md:min-w-[200px] lg:min-w-[250px]'>
-              <div className='bg-[#3A3A3A] rounded-[10px] p-2 lg:p-3 flex flex-col items-center ' >
+            <Link to={`/movie-suggestion/movie`} state={{ movieTitle: `${data.name}` }} key={index}><div className='py-10 md:py-10 lg:py-20 min-w-[170px] md:min-w-[200px] lg:min-w-[250px]'>
+              <div className='bg-[#1B1E20] rounded-[10px] p-2 lg:p-3 flex flex-col items-center ' >
                 <div className=' w-full rounded-[10px] h-[200px] md:h-[250px] lg:h-[300px]'
-                 style={{
-                  backgroundImage: `url(${data.background})`,
-                  backgroundPosition: "top",
-                  backgroundSize: "cover"
-                }}>
+                  style={{
+                    backgroundImage: `url(${data.background})`,
+                    backgroundPosition: "top",
+                    backgroundSize: "cover"
+                  }}>
                   <img className='m-2' src={`home/${data.tag}.svg`} alt="" />
                 </div>
                 <div className='pt-2 text-lg md:text-xl'>{data.name}</div>
                 <div className='flex justify-center items-center'> <img className='inline-block ' src="home/star.svg" alt="" /><span className='px-3'>{data.rating}/10</span></div>
                 <div className='w-full pt-2'>
-                  <button className='w-full py-2 bg-[#212121] flex justify-center text-center gap-2 capitalize rounded-lg'><img className='inline-block my-auto' src="home/add.svg" alt="" /><span className='text-lg md:text-xl'>watchlist</span></button>
+                  <button className='w-full border border-[#2b2b2b] py-2 bg-[#212121] flex justify-center text-center gap-2 capitalize rounded-lg'><img className='inline-block my-auto' src="home/add.svg" alt="" /><span className='text-lg md:text-xl'>watchlist</span></button>
                 </div>
               </div>
-            </div>
+            </div></Link>
           ))}
         </div>
       </div>
 
-      <div className='upcoming-section my-2 sm:my-10 w-full bg-[#2D2D2d] py-5 md:py-10 px-2 sm:px-5 md:px-10 lg:px-24 capitalize'>
+      <div className='upcoming-section mt-2 sm:mt-10 w-full bg-[#1B1E20] pt-5 md:pt-10 px-2 sm:px-5 md:px-10 lg:px-24 capitalize'>
         <div className='text-2xl sm:text-3xl md:text-4xl font-medium sm:font-normal'>cooming soon <span className='text-[#989898]'>on theater</span></div>
 
         <div className='w-full flex scroll-section gap-2 sm:gap-4 lg:gap-10'>
           {comingData.map((data, index) => (
-            <div key={index} className='min-w-[270px] sm:min-w-[300px] md:min-w-[390px] lg:min-w-[540px] pt-10 lg:py-10 ' style={{ letterSpacing: "3px" }}>
+            <Link to={`${data.Link}`} key={index}><div className='min-w-[270px] sm:min-w-[300px] md:min-w-[390px] lg:min-w-[540px] pt-10 lg:py-10 ' style={{ letterSpacing: "3px" }}>
               <div className='w-full h-[170px] sm:h-[200px] md:h-[250px] lg:h-[300px] bg-black rounded-[15px] flex p-2 sm:p-5 gap-5 sm:gap-10 items-end'
-               style={{
-                backgroundImage: `url(${data.background})`,
-                backgroundPosition: "top",
-                backgroundSize: "cover"
-              }}>
+                style={{
+                  backgroundImage: `url(${data.background})`,
+                  backgroundPosition: "top",
+                  backgroundSize: "cover"
+                }}>
                 <img className='w-[40px] sm:w-[50px]' src="home/playbutton.svg" alt="" />
                 <div className='h-[50px] items-center flex text-lg sm:text-xl'>2:32</div>
               </div>
               <div className='uppercase pt-3 px-5 text-[14px] md:text-lg text-[#989898]'>on {data.date}</div>
               <div className='uppercase font-medium px-5 text-lg md:text-xl'>{data.name}</div>
-            </div>
+            </div></Link>
           ))}
         </div>
       </div>
