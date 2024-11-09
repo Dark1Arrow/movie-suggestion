@@ -2,10 +2,10 @@ import React from 'react'
 
 const FooterOnly = () => {
     return (
-        <div className='mt-24 flex flex-col justify-center text-center p-10'>
+        <div className='pt-24 flex flex-col justify-center text-center p-10 bg-[#121213]'>
             <div className='text-4xl'>LOGO</div>
-            <div className='w-[400px] mx-auto my-5 uppercase'>
-                <ul className='flex text-center justify-between items-center text-xl '>
+            <div className='w-[80vw] md:w-[400px] mx-auto my-5 uppercase flex justify-center items-center'>
+                <ul className='flex text-center justify-between items-center text-sm sm:text-xl '>
                     <li className='px-5 uppercase border-r-2'>home</li>
                     <li className='px-5 uppercase border-r-2'>catgories</li>
                     <li className='px-5 uppercase'>about us</li>

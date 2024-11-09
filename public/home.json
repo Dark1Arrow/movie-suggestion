@@ -5,28 +5,32 @@
             "rating": 9,
             "backgroundImage": "https://theconsultingdetectivesblog.com/wp-content/uploads/2014/06/the-dark-knight-original.jpg",
             "releaseDate": "18 July 2008",
-            "director": "Christopher Nolan"
+            "director": "Christopher Nolan",
+            "directorImg" : "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQJlKetJRpflzPu3ymPX9OwOM5AIVjLi_3UH_8ZY1hvKows7SI"
         },
         {
             "name": "Inception",
             "rating": 8.8,
             "backgroundImage": "https://miro.medium.com/v2/resize:fit:1400/1*fQprmrsYfaAC5jmKBfp7Sg.jpeg",
             "releaseDate": "16 Jul 2010",
-            "director": "Christopher Nolan"
+            "director": "Christopher Nolan",
+            "directorImg" : "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQJlKetJRpflzPu3ymPX9OwOM5AIVjLi_3UH_8ZY1hvKows7SI"
         },
         {
             "name": "Kingsman: The Golden Circle",
             "rating": 6.7,
             "backgroundImage": "https://reactormag.com/wp-content/uploads/2019/06/KingsmanGoldenCircle01.jpg",
             "releaseDate": "22 Sep 2017",
-            "director": "Matthew Vaughn"
+            "director": "Matthew Vaughn",
+            "directorImg": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2024/02/argylle-matthew-vaughn-interview.jpg"
         },
         {
             "name": "Ready Player One",
             "rating": 7.4,
             "backgroundImage": "https://miro.medium.com/v2/resize:fit:5200/1*XXSS1NOmj3eDL9jGcXI3dA.jpeg",
             "releaseDate": "29 Mar 2018",
-            "director": "Steven Spielberg"
+            "director": "Steven Spielberg",
+            "directorImg": "https://variety.com/wp-content/uploads/2017/04/steven-spielberg.jpg"
         }
     ],
     "favoriteSection": [
@@ -93,44 +97,58 @@
         {
             "name": "Joker: Folie à Deux",
             "date": "oct 4",
-            "background": "https://discussingfilm.net/wp-content/uploads/2024/09/JokerFolieaDeux-Review.jpg"
+            "background": "https://discussingfilm.net/wp-content/uploads/2024/09/JokerFolieaDeux-Review.jpg",
+            "Link": "https://www.youtube.com/embed/_OKAwz2MsJs"
         },
         {
             "name": "Megalopolis",
             "date": "sep 27",
-            "background": "https://i.abcnewsfe.com/a/8a94bf68-a325-42c4-9161-5ecc25f0bd72/Megalopolis-1-ht-gmh-240821_1724285455351_hpMain.jpg"
+            "background": "https://i.abcnewsfe.com/a/8a94bf68-a325-42c4-9161-5ecc25f0bd72/Megalopolis-1-ht-gmh-240821_1724285455351_hpMain.jpg",
+            "Link": "https://www.youtube.com/embed/pq6mvHZU0fc"
         },
         {
             "name": "Venom: The Last Dance",
             "date": "oct 25",
-            "background": "https://www.indiewire.com/wp-content/uploads/2024/06/MCDVELE_SP031.jpg"
+            "background": "https://www.indiewire.com/wp-content/uploads/2024/06/MCDVELE_SP031.jpg",
+            "Link": "https://www.youtube.com/embed/HyIyd9joTTc"
         },
         {
             "name": "Small Things Like These",
             "date": "nov 8",
-            "background": "https://variety.com/wp-content/uploads/2024/02/STLT-copy.jpg"
+            "background": "https://variety.com/wp-content/uploads/2024/02/STLT-copy.jpg",
+            "Link": "https://www.youtube.com/embed/_OKAwz2MsJs"
         }
     ],
     "genreSection": [
         {
             "genre": "Action",
-            "background": "https://www.watchmojo.com/uploads/thumbs720/Fi-M-Top10-Action-Movie-Killing-Spree-Scenes-720p30.jpg"
+            "background": "https://www.watchmojo.com/uploads/thumbs720/Fi-M-Top10-Action-Movie-Killing-Spree-Scenes-720p30.jpg",
+            "code" : 28,
+            "language" : "hi"
         },
         {
             "genre": "thriller",
-            "background": "https://variety.com/wp-content/uploads/2024/07/gaga-harley.png?w=1000&h=667&crop=1"
+            "background": "https://variety.com/wp-content/uploads/2024/07/gaga-harley.png?w=1000&h=667&crop=1",
+            "code" : 53,
+            "language" : "ko"
         },
         {
             "genre": "horror",
-            "background": "https://www.slashfilm.com/img/gallery/12-horror-movie-scenes-that-scared-actors-in-real-life/bill-haders-scenes-with-pennywise-in-it-chapter-two-1636121685.jpg"
+            "background": "https://www.slashfilm.com/img/gallery/12-horror-movie-scenes-that-scared-actors-in-real-life/bill-haders-scenes-with-pennywise-in-it-chapter-two-1636121685.jpg",
+            "code": 27,
+            "language" : "ko"
         },
         {
             "genre": "gangster",
-            "background": "https://d17389e216ygm.cloudfront.net/wp-content/uploads/CE_GCDevil_1.jpg"
+            "background": "https://d17389e216ygm.cloudfront.net/wp-content/uploads/CE_GCDevil_1.jpg",
+            "code": 28,
+            "language" : "ko"
         },
         {
             "genre": "sci fi",
-            "background": "https://i.ytimg.com/vi/731cqqgdhEs/maxresdefault.jpg"
+            "background": "https://i.ytimg.com/vi/731cqqgdhEs/maxresdefault.jpg",
+            "code": 878,
+            "language" : "ko"
         }
     ],
     "toplistSection": [
