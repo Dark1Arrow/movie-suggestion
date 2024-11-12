@@ -1,6 +1,10 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
-import Home from './components/About'
+import Home from './components/Home'
+import Category from './components/Category'
+import Movie from './components/Movie'
+import About from './components/About'
+import Actors from './components/Actors'
 
 function App() {
   const router = createBrowserRouter([
