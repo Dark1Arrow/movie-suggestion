@@ -16,7 +16,6 @@ const About = () => {
                 <div className="Part-1_box1">
 
 
-                    <div className="Part-1_box1-1">
 
 
                         <div className="Vector_1"><img src="src/assets/Vector.svg" alt="" /></div>
@@ -68,38 +67,37 @@ const About = () => {
 
 
 
-                    </div>
-
-
-
-
-
-
-
 
                 </div>
+
+                
 
                 <div className="Part-1_box2">
 
 
 
-                    <div className="about-us-title">
 
-                        About Us
+                        <div className="about-us-title">
 
-                    </div>
+                            About Us
 
-                    <div className="profile-description">
+                        </div>
+
+                        <div className="profile-description">
 
 
 
-                        <div className="profile-description_text">
+                            <div className="profile-description_text">
 
-                            Hello! i am
-                            <span> Goutam khanna</span> ,
-                            Creative <span> Developer</span> Who love
-                            Bleanding <span> Design</span> with Code
+                                Hello! i am
+                                <span> Goutam khanna</span> ,
+                                Creative <span> Developer</span> Who love
+                                Bleanding <span> Design</span> with Code
 
+
+
+
+                            </div>
 
 
 
@@ -107,28 +105,32 @@ const About = () => {
 
 
 
-                    </div>
+                        <div className="site-offers-section">
 
+                            <div>
+                                <h1>Our Site Offers:</h1>
 
+                                <ul className='site-features-list' >
 
-                    <div className="site-offers-section">
+                                    <li>Personalized Recommendations: Discover movies tailored to your tastes.</li>
+                                    <li>Curated Lists: Explore films through expert-curated lists and reviews.</li>
+                                    <li>User-Friendly Design: Enjoy a sleek, intuitive interface crafted for movie lovers.</li>
 
-                        <div>
-                            <h1>Our Site Offers:</h1>
+                                </ul>
+                            </div>
 
-                            <ul className='site-features-list' >
-
-                                <li>Personalized Recommendations: Discover movies tailored to your tastes.</li>
-                                <li>Curated Lists: Explore films through expert-curated lists and reviews.</li>
-                                <li>User-Friendly Design: Enjoy a sleek, intuitive interface crafted for movie lovers.</li>
-
-                            </ul>
                         </div>
 
-                    </div>
+
+
+
 
 
                 </div>
+
+
+
+
 
 
             </div>

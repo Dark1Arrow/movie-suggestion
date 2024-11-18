@@ -62,11 +62,11 @@
 }
 
 
-.Part-1_box1-1 {
+/* .Part-1_box1-1 {
   width: 500px;
   height: 80vh;
-  /* background-color: red; */
-}
+  background-color: red;
+} */
 
 .Vector_1 {
   width: 100px;
@@ -212,12 +212,12 @@
 
 }
 
-.Part-2_box2-2 {
+/* .Part-2_box2-2 {
   width: 500px;
   height: 80vh;
-  /* background-color: red; */
+  background-color: red;
 
-}
+} */
 
 
 .about-us-title {
@@ -662,30 +662,26 @@
 
   .Aboutus_Section_Part-1 {
     flex-direction: column-reverse;
-    height: 450vh;
+    height: 400vh;
     align-items: center;
     row-gap: 100px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: red;
   }
 
 
-  .Part-1_box1-1 {
-    width: 80vw;
-    height: 143vh;
-    /* background-color: yellow */
-  }
+ 
 
-  .Frame-1 {
+  /* .Frame-1 {
     width: 370px;
-    height: 143vh;
+    height: 153vh;
 
   }
 
   .Part-1_box2 {
     width: 650px;
     height: 150vh;
-    /* background-color:blue; */
+    background-color:blue;
 
   }
 
@@ -710,14 +706,14 @@
 
 
   .site-offers-section h1 {
-    /* background-color: red; */
+    background-color: red;
     margin-top: 100px;
-  }
+  } */
 
 
   /*--------------------------------------Aboutus_Section_Part-2-------------------------------------*/
 
-  .Aboutus_Section_Part-2 {
+  /* .Aboutus_Section_Part-2 {
 
     flex-direction: column;
     height: 450vh;
@@ -725,24 +721,24 @@
     row-gap: 100px;
     justify-content: space-evenly;
     background-color: red;
-  }
+  } */
 
-  .Part-2_box1 {
+  /* .Part-2_box1 {
     width: 650px;
     height: 150vh;
-    /* background-color: blue; */
+    background-color: blue;
 
-  }
+  } */
 
 
-  .Part-2_box2-2 {
+  /* .Part-2_box2-2 {
     width: 80vw;
     height: 143vh;
-    /* background-color: yellow */
-  }
+    background-color: yellow
+  } */
 
 
-  .Frame-1-2 {
+  /* .Frame-1-2 {
     width: 370px;
     height: 143vh;
 
@@ -754,14 +750,14 @@
     margin-top: 100px;
     margin-left: 15px;
     font-size: 30px;
-    /* background-color: red; */
+    background-color: red;
   }
 
   .site-features-list-2 {
     margin-top: 50px;
     margin-left: 30px;
 
-  }
+  } */
 
  
 
